@@ -561,7 +561,7 @@ ul {
   border-radius: 50%;
   fill: var(--icon-normal-color);
   background-color: var(--white-bgc-text-color);
-  transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .social-link:hover,
@@ -766,7 +766,7 @@ ul {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--footer-social-bgc);
-  transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .icon-join {
@@ -795,18 +795,18 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
-  transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .button.primary {
   color: var(--white-bgc-text-color);
   background-color: var(--accent-color);
-  transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-bgc);
-  transition: color var(--animation-duration-hw-05) var(--bezier-hw-05);
+  transition: background-color var(--animation-duration-hw-05) var(--bezier-hw-05), fill var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .button-group {
