@@ -98,11 +98,12 @@ ul {
   line-height: 1.19;
   letter-spacing: 0.03em;
   text-decoration: none;
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 .header-logo:hover,
 .header-logo:focus {
   color: var(--accent-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
+  /* transition: var(--animation-duration-hw-05) var(--bezier-hw-05); */
 }
 
 .web {
@@ -132,6 +133,7 @@ ul {
   text-decoration: none;
   padding-top: 32px;
   padding-bottom: 32px;
+  /* transition: color var(--animation-duration) var(--bezier-hw-05); */
 }
 
 .header {
@@ -151,7 +153,6 @@ ul {
 .header-list .link:hover,
 .header-list .link:focus {
   color: var(--accent-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 .header-list .link.current {
   color: var(--accent-color);
@@ -177,7 +178,7 @@ ul {
   letter-spacing: 0.02em;
   color: var(--title-text-color);
   position: relative;
-  transition: var(--accent-color) var(--animation-duration) var(--bezier-hw-05);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
   /* outline: 5px solid tomato; */
 }
 
@@ -225,25 +226,16 @@ ul {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  padding-top: 32px;
+  padding-bottom: 32px;
   text-decoration: none;
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .icon-mail,
 .icon-tel {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header-mail,
-.header-tel {
-  color: var(--primary-text-color);
-  font-size: 14px;
-  font-weight: 500;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 
 .header-mail {
@@ -253,13 +245,12 @@ ul {
 .header-mail:hover,
 .header-mail:focus {
   color: var(--accent-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
+
 }
 
 .header-tel:hover,
 .header-tel:focus {
   color: var(--accent-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .header-contacts {
@@ -456,11 +447,12 @@ ul {
 .products-list {
   display: flex;
   margin-top: 50px;
+  margin-left: -30px;
 }
 
-.products-item:not(:last-child) {
+/* .products-item:not(:last-child) {
   margin-right: 30px;
-}
+} */
 
 .products-picture {
   display: flex;
@@ -468,7 +460,7 @@ ul {
   align-items: center;
 }
 
-.products-picture::after {
+/* .products-picture::after {
   content: '';
   position: absolute;
   width: 100%;
@@ -476,7 +468,7 @@ ul {
   height: 70px;
   bottom: 0;
   background: rgba(47, 48, 58, 0.8);
-}
+} */
 
 .section-title {
   font-weight: 700;
@@ -494,7 +486,6 @@ ul {
   position: relative;
 }
 .picture-title {
-  display: flex;
   color: var(--white-bgc-text-color);
   z-index: 1;
   position: absolute;
@@ -502,7 +493,14 @@ ul {
   font-style: normal;
   font-weight: 500;
   text-transform: uppercase;
-  bottom: 27px;
+  bottom: 0;
+  font-size: 14px;
+  background: rgba(47, 48, 58, 0.8);
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Team */
@@ -563,13 +561,13 @@ ul {
   border-radius: 50%;
   fill: var(--icon-normal-color);
   background-color: var(--white-bgc-text-color);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .social-link:hover,
 .social-link:focus {
   background-color: var(--accent-color);
   fill: var(--white-bgc-text-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 /* Employee name*/
@@ -622,6 +620,7 @@ ul {
   border-color: hover var(--accent-color);
   border-color: focus var(--accent-color);
   color: var(--icon-normal-color);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .icon-client {
@@ -631,7 +630,6 @@ ul {
 .client-link:hover,
 .client-link:focus {
   color: var(--accent-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 /* Footer logo */
@@ -706,6 +704,7 @@ ul {
   letter-spacing: 0.03em;
   text-decoration: none;
   font-style: normal;
+  transition: color var(--animation-duration) var(--bezier-hw-05);
   /* outline: 2px solid tomato; */
 }
 
@@ -716,6 +715,7 @@ ul {
   line-height: 1.71;
   text-decoration: none;
   font-style: normal;
+  transition: color var(--animation-duration) var(--bezier-hw-05);
   /* outline: 2px solid tomato; */
 }
 
@@ -723,14 +723,12 @@ ul {
 .footer-mail:focus {
   color: var(--accent-color);
   background-color: var(--hero-footer-bgc);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 .footer-tel:hover,
 .footer-tel:focus {
   color: var(--accent-color);
   background-color: var(--hero-footer-bgc);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 /* Footer social */
@@ -768,6 +766,7 @@ ul {
   justify-content: center;
   border-radius: 50%;
   background-color: var(--footer-social-bgc);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .icon-join {
@@ -777,7 +776,6 @@ ul {
 .footer-sociallink:focus {
   background-color: var(--accent-color);
   fill: var(--white-bgc-text-color);
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
 }
 
 /* Portfolio page content */
@@ -797,21 +795,25 @@ ul {
   border-radius: 4px;
   padding: 6px 22px;
   border: 0;
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .button.primary {
   color: var(--white-bgc-text-color);
   background-color: var(--accent-color);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 .button.secondary {
   color: var(--title-text-color);
   background-color: var(--secondary-bgc);
+  transition: color var(--animation-duration) var(--bezier-hw-05);
 }
 
 .button-group {
   display: flex;
   margin-bottom: 50px;
   justify-content: center;
+  
 }
 
 .button:hover,
@@ -822,12 +824,13 @@ ul {
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
-  transition: var(--animation-duration-hw-05) var(--bezier-hw-05);
+  
 }
 
 .group-item {
   display: flex;
   margin-left: 6px;
+  transition: color var(--animation-duration) var(--bezier-hw-05); 
 }
 
 /* Portfolio main content */
